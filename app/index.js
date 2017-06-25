@@ -28,7 +28,7 @@ var deployServer = http.createServer(function (request, response) {
         })
 
     } else {
-
+        response.send('index')
         response.writeHead(404)
         response.end('Not Found.')
 
