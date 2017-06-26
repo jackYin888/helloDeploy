@@ -7,7 +7,7 @@ const PORT = 8091
     , PATH = '..'
 
 app.get('/', function (req, res) {
-    res.send('hello world');
+    res.send('hello jack');
 });
 app.post('/deploy', (req, res) => {
     var commands = [
