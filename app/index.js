@@ -10,6 +10,7 @@ app.get('/', function (req, res) {
     res.send('hello jackyin');
 });
 app.post('/deploy', (req, res) => {
+    res.send('Deploying.')
     var commands = [
         'git pull',
     ].join(' && ')
@@ -21,7 +22,8 @@ app.post('/deploy', (req, res) => {
         }
         process.stderr.write(err)
         process.stdout.write(out)
-        res.send('Deploy Done.')
+        res.send('Deploying.')
+
     })
 })
 
